@@ -75,9 +75,21 @@ nav {
   color: #CCCCCC;
 }
 @media only screen and (min-width: 401px) {
-
+  .navigation-links {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 @media only screen and (min-width: 961px) {
+  .logo {
+    font-size: 22px;
+    padding: 30px;
+  }
 
+  .navigation-links {
+    width: 960px;
+    font-size: 18px;
+  }
 }
