@@ -28,68 +28,67 @@ body {
   font-size: 16px;
 }
 
-.research-article {
+.article {
   margin: 30px;
   font-size: 16px;
 }
 
 .page h1,
-.research-article h1 {
+.article h1 {
   font-size: 20px;
 }
 
-.research-article p {
+.article p {
   margin-top: 1em;
   line-height: 1.3em;
 }
 
-.research-item {
+.project-research-item {
   margin-bottom: 50px;
 }
 
-.research-item a:link,
-.research-item a:visited,
-.research-item a:hover,
-.research-item a:visited:hover {
+.project-research-item a:link,
+.project-research-item a:visited,
+.project-research-item a:hover,
+.project-research-item a:visited:hover {
   text-decoration: none;
   color: #404040;
 }
 
-.research-item a:active,
-.research-item a:visited:active {
+.project-research-item a:active,
+.project-research-item a:visited:active {
   color: #888888;
 }
 
-.research-article a:link,
-.research-article a:visited {
+.article a:link,
+.article a:visited {
   text-decoration: none;
   color: #5E94AF;
 }
 
-.research-article a:hover,
-.research-article a:visited:hover {
+.article a:hover,
+.article a:visited:hover {
   color: #8EC4DF;
   text-decoration: underline;
 }
 
-.research-article a:active,
-.research-article a:visited:active {
+.article a:active,
+.article a:visited:active {
   color: #4E849F;
 }
 
-.research-item time,
-.research-item .tag {
+.project-research-item time,
+.project-research-item .tag,
+.article time {
   margin-top: 5px;
-  color: #666666;
+  color: #777777;
 }
 
 
 @media only screen and (min-width: 401px) {
-  .page {
-    font-size: 16px;
-  }
 
 }
+
 
 @media only screen and (min-width: 961px) {
   .page {
@@ -98,7 +97,7 @@ body {
     padding: 30px;
   }
 
-  .research-article {
+  .article {
     width: 930px;
     margin: 30px auto;
     padding: 30px;
