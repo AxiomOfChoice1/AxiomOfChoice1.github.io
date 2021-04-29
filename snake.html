@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>No Lose Snake - Axiom Of Choice</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+    }
+    #gameover-overlay {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba(0, 0, 0, 0.25);
+      z-index: 2;
+      padding: 19vh;
+    }
+    #gameover-overlay p {
+      font-family: sans-serif;
+      padding-bottom: 1em;
+      color: white;
+      font-size: 1.5em;
+      font-weight: bold;
+      line-height: 2em;
+      text-align: center;
+    }
+    #game-board {
+      display: grid;
+      /* repeat(..., 1fr) has to be changed concurrently with GRID_SIZE */
+      grid-template-rows: repeat(30, 1fr);
+      grid-template-columns: repeat(30, 1fr);
+      background-color: #EAEAEA;
+      border: 1px solid black;
+      border-radius: 1vmin;
+      width: 99vmin;
+      height: 99vmin;
+    }
+    .snake {
+      background-color: hsl(120, 100%, 45%);
+      border: 0.25vmin solid black;
+      border-radius: 1vmin;
+    }
+    .food {
+      background-color: hsl(60, 100%, 50%);
+      border: 0.25vmin solid black;
+      border-radius: 1vmin;
+    }
+  </style>
+  <script src='./scripts/snake.js' defer type='text/javascript'></script>
+</head>
+<body>
+  <div id="gameover-overlay" onclick="remove()">
+    <p>Click anywhere to restart</p>
+    <p>Keyboard buttons:</p>
+    <p>f: creates a food block</p>
+    <p>g: expands the snake</p>
+    <p>h: decrease snake speed</p>
+    <p>j: increase snake speed</p>
+    <p>r: restart the snake game</p>
+  </div>
+  <div id="game-board"></div>
+</body>
+</html>
